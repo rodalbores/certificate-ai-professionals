@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(28, 92, 96), #01282b);
+    font-weight: 400;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+	overflow: hidden;
+}
+
+.certificate-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f7f7f7;
+}
+  
+.certificate {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    background-color: white;
+}
+  
+.certificate-bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+  
+.certificate-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    color: #0b3c61;
+}
+
+.certificate-h1 {
+    padding-top: 80px;
+    font-size: 60px;
+}
+
+.certificate-h2 {
+    font-size: 30px;
+}
+
+.certificate-text {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.recipient-name {
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+  
+.paragraph {
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.name1 {
+    position: absolute;
+    padding-top: 120px;
+    left: 195px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.name2 {
+    position: absolute;
+    padding-top: 120px;
+    right: 210px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cert-id {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.download {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: -1px -1px 2px rgba(255,255,255,1),
+	inset 1px 1px 2px rgba(0,0,0,0.10),
+	inset -1px -1px 2px rgba(255,255,255,1),
+	1px 1px 2px rgba(0,0,0,0.10);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.reverion-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.reverion-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: rotateX(180deg);
+}

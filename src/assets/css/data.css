@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(28, 92, 96), #01282b);
+    font-weight: 400;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+	overflow: hidden;
+}
+
+.data-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .8);
+    text-shadow: 1px 1px 5px rgb(2, 152, 72, .5);
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .5);
+	background: transparent;
+    backdrop-filter: blur(5px);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.25),
+	    inset 1px 1px 2px rgba(255,255,255,0.25),
+	    inset -1px -1px 2px rgba(0,0,0,0.5);
+}
+
+.data-form h2 {
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+}
+
+.data-form .inputBox i {
+	position: absolute;
+	left: -10%;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: -1px -1px 2px rgba(255,255,255,1),
+	inset 1px 1px 2px rgba(0,0,0,0.10),
+	inset -1px -1px 2px rgba(255,255,255,1),
+	1px 1px 2px rgba(0,0,0,0.10);
+}
+
+.data-form .inputBox {
+    position: relative;
+	top: 0px;
+	left: 5%;
+    width: 400px;
+	height: 40px;
+    margin: 30px 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBox input {
+	position: relative;
+	left: 5px;
+	height: 100%;
+	width: 80%;
+	border: none;
+	background: transparent;
+	padding: 0 15px;
+	font-size: 15px;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: -1px -1px 2px rgba(255,255,255,1),
+	inset 1px 1px 2px rgba(0,0,0,0.10),
+	inset -1px -1px 2px rgba(255,255,255,1),
+	1px 1px 2px rgba(0,0,0,0.10);
+	user-select: none;
+}
+
+
+.inputBox input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.inputBox .error-message {
+    position: absolute;
+    top: 45px;
+	left: 50px;
+    font-size: 11px;
+}
+
+.generate-button {
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: -1px -1px 2px rgba(255,255,255,1),
+	inset 1px 1px 2px rgba(0,0,0,0.10),
+	inset -1px -1px 2px rgba(255,255,255,1),
+	1px 1px 2px rgba(0,0,0,0.10);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .data-form {
+        transform: translate(-50%, -50%) scale(.9);
+    }
+
+    .data-form .inputBox i {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .data-form .inputBox {
+        left: 0;
+    }
+}
